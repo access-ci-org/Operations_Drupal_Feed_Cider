@@ -32,6 +32,8 @@ Creates these Drupal elements:
   Machine name: cider_active_resources_feed
 
 - Feed: Retrieve CiDeR from Operations API
+  Add a new Feed at /feed/add/cider_active_resources_feed:
+  https://opsapi1.access-ci.org/wh2/cider/v1/access-active/?format=json
 
 
 Developed and tested using:
@@ -50,4 +52,4 @@ Developed and tested using:
 2. Define Content Tyupe, Feed Type, Feed
 3. Full Drupal export after implementation
 4. tar -C export_after -czvf new_files.tgz `diff -n export_before export_after|awk '{print $4}'`
-5. extrac new_files.tgz into the export/ directory
+5. extract new_files.tgz into the export/ directory
