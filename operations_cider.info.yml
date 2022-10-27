@@ -4,5 +4,5 @@ type: module
 core_version_requirement: ^9 || ^10
 package: Custom
 dependencies:
-  - drupal/feeds
-  - drupal/feeds_ex
+  - drupal:feeds
+  - drupal:feeds_ex
