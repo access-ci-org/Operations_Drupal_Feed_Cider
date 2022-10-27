@@ -1,5 +1,6 @@
 {
     "name": "access/operations_cider",
+    "version": "0.1.0",
     "description": "Drupal Feed of ACCESS Integrated Resources",
     "type": "drupal-custom-module",
     "license": "Apache License, Version 2.0",
@@ -16,5 +17,16 @@
     "support": {
         "issues": "https://github.com/access-ci-org/Operations_Drupal_Feed_Cider/issues",
         "source": "https://github.com/access-ci-org/Operations_Drupal_Feed_Cider"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_ex": "^1.0@beta"
     }
 }
