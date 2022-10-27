@@ -1,0 +1,20 @@
+{
+    "name": "access/operations_cider",
+    "description": "Drupal Feed of ACCESS Integrated Resources",
+    "type": "drupal-custom-module",
+    "license": "Apache License, Version 2.0",
+    "authors": [
+        {
+            "name": "JP Navarro",
+            "email": "jpfnavarro@gmail.com"
+        },
+        {
+            "name": "Andrew Pasquale",
+            "email": "andrew@elytra.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/access-ci-org/Operations_Drupal_Feed_Cider/issues",
+        "source": "https://github.com/access-ci-org/Operations_Drupal_Feed_Cider"
+    }
+}

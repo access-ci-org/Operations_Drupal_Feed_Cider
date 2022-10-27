@@ -1,0 +1,8 @@
+name: Operations - CiDeR
+description: 'Drupal Feed of ACCESS Integrated Resources'
+type: module
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal/feeds:^3.0@beta
+  - drupal/feeds_ex:^1.0@beta
