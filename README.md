@@ -33,7 +33,6 @@ Creates these Drupal elements:
 
 - Feed: Retrieve CiDeR from Operations API
 
-
 Developed and tested using:
 - Drupal 9.4.8
 
@@ -43,6 +42,26 @@ Developed and tested using:
 - Feeds Extensible Parsers 8.x-1.0-beta1
   https://www.drupal.org/project/feeds_ex
 
+## Installation
+Add repository to composer.json:
+```
+"repositories": {
+    ...
+    "operations_cider": {
+       "type": "vcs",
+       "url": "https://github.com/access-ci-org/Operations_Drupal_Feed_Cider.git"
+    }
+},
+```
+
+Install the module:
+```
+composer require access/operations_cider
+```
+
+Add a new Feed at /feed/add/cider_active_resources_feed
+
+The feed source is https://opsapi1.access-ci.org/wh2/cider/v1/access-active/?format=json
 
 ## Developer Notes
 
@@ -50,4 +69,4 @@ Developed and tested using:
 2. Define Content Tyupe, Feed Type, Feed
 3. Full Drupal export after implementation
 4. tar -C export_after -czvf new_files.tgz `diff -n export_before export_after|awk '{print $4}'`
-5. extrac new_files.tgz into the export/ directory
+5. extract new_files.tgz into the export/ directory
