@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_node_insert().
+ * 
+ * Send CiDeR resources to all affiliated sites if using the domain_access module.
+ */
+function operations_cider_node_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+  if (\Drupal::moduleHandler()->moduleExists('domain_access')) {
+    $type = $entity->bundle();
+    if ($type == 'access_active_resources_from_cid') {
+      $entity->field_domain_all_affiliates = TRUE;
+      $entity->save();
+    }
+  }
+}
