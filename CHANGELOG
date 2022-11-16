@@ -1,2 +1,9 @@
+0.1.2 20221115 AP
+  - Send to all domain affiliates if using domain_access module
+  - Move configuration to optional
+  
+0.1.1 20221027 AP
+  - Installable configuration
+
 0.1.0 20221027 JP
   - First checkin of the export configuration files introduced when defining this feed
