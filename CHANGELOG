@@ -1,3 +1,6 @@
+0.1.3 20221118 AP
+  - Add missing modified files
+
 0.1.2 20221115 AP
   - Send to all domain affiliates if using domain_access module
   - Move configuration to optional
