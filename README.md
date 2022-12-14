@@ -61,7 +61,7 @@ composer require access/operations_cider
 
 Add a new Feed at /feed/add/cider_active_resources_feed
 
-The feed source is https://opsapi1.access-ci.org/wh2/cider/v1/access-active/?format=json
+The feed source is https://operations-api.access-ci.org/wh2/cider/v1/access-active/?format=json
 
 ## Developer Notes
 
