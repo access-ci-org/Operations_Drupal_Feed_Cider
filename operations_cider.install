@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install file to create feed on install.
+ */
+
+use Drupal\feeds\Entity\Feed;
+
+/**
+ * Implements hook_install().
+ */
+function operations_cider_install() {
+  $feed = Feed::create([
+    'type' => "cider_active_resources_feed",
+    'title' => "Active Resources",
+    'source' => "https://operations-api.access-ci.org/wh2/cider/v1/access-active/?format=json",
+    'uid' => 1,
+  ]);
+  $feed->save();
+
+}
